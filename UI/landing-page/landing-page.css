@@ -81,8 +81,9 @@ header a:hover {
 .showcase-text a{
  font-size: 1.3em;
  color:#e8419d;
- margin-left: 850px;
+ padding-left: 850px;
  text-decoration: none;
+ box-shadow: border-box;
 }
 #message-box p {
   margin-top: 10px;
@@ -97,26 +98,6 @@ header a:hover {
   padding: 8px;
   border-radius: 10px;
 }
-/*newsletter*/
-#newsletter {
-  background: #35424a;
-  padding: 15px;
-  color: #ffffff;
-}
-#newsletter h1 {
-  float: left;
-}
-#newsletter form {
-  float: right;
-  margin-top: 15px;
-}
-
-#newsletter input[type="email"] {
-  padding: 4px;
-  width: 250px;
-  height: 25px;
-}
-
 /*Boxes*/
 .list-product{
   display: grid;
@@ -139,6 +120,27 @@ header a:hover {
   width: 80;
 }
 
+/*newsletter*/
+#newsletter {
+  background: #35424a;
+  padding: 15px;
+  color: #ffffff;
+}
+#newsletter h1 {
+  float: left;
+}
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  width: 250px;
+  height: 25px;
+}
+
+
 /*footer*/
 footer {
   background-color: #e8491d;
@@ -148,6 +150,32 @@ footer {
 }
 
 /*media queries*/
+@media screen and (max-width: 1024px) {
+
+.list-product{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  padding-top: 50px;
+}
+#boxes .box img {
+  width: 100%;
+}
+#boxes .box{
+  width: 90%;
+   margin: 10px 0;
+   font-size: 22px;
+}
+
+.showcase-text a{
+ font-size: 2.5em;
+ padding: 0;
+ margin: 0;
+}
+#message-box p {
+  font-size: 25px;;
+}
+}
 
 @media (max-width: 768px) {
   header #branding,
@@ -175,6 +203,24 @@ footer {
     width: 100%;
     margin-bottom: 5px;
   }
+  
+.list-product{
+ display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: row wrap;
+   align-content: stretch;
+}
+
+#boxes .box img {
+  width: 80%;
+}
+#boxes .box{
+  width: 90%;
+   margin: 10px 0;
+   font-size: 20px;
+}
+
 }
 
 @media (max-width: 460px) {
@@ -186,12 +232,24 @@ footer {
   #showcase h1 {
     font-size: 15px;
   }
-  /*.list-product{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3px;
-
-}*/
+  
+#boxes .list-product{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+ 
+}
+#boxes .box img {
+  width: 100%;
+}
+#boxes .box{
+  width: 80%;
+   margin: 10px 0;
+}
+.showcase-text a{
+ font-size: 20px;
+margin: 0;
+}
 }
 
 @media (max-width: 320px) {
@@ -207,10 +265,22 @@ footer {
   #showcase h1 {
     font-size: 18px;
   }
- /* .list-product{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2px;
+ #boxes .list-product{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+ 
+}
+#boxes .box img {
+  width: 100%;
+}
+#boxes .box{
+  width: 60%;
+   margin: 7px 0;
+}
+.showcase-text a{
+ font-size: 18px;
+margin: 0;
+}
 
-}*/
 }
