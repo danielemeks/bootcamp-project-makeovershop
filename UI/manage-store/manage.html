@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Online Beauty store" />
+    <meta name="keywords" content="Beauty store, Makeup store, makeover store, Online store" />
+    <meta name="author" content="zubenna" />
+    <title>Bandy Makeover Store | Manage Store</title>
+    <link rel="stylesheet" href="manager.css" />
+</head>
+
+<body>
+    <div id="header-text"><h2>Store Management Dashboard</h2>
+    </div>
+    <section id="show-board">
+        <div class="display">
+            <div class="nav-button">
+                    <ul>
+                        <a class="nav-link" href="#">
+                            <li>View Products In Stock</li>
+                        </a>
+                        <a class="nav-link" href="#">
+                            <li>No Of Items Sold Today</li>
+                        </a>
+                        <a class="nav-link" href="#">
+                        <li>Total No Of Products In Stock</li>
+                        </a>
+                        <a class="nav-link" href="#">
+                            <li>Total Sales Today</li>
+                        </a>
+                        <a class="nav-link" href="#">
+                            <li>Total Sales This Month</li>
+                        </a>
+                        <a class="nav-link" href="#">
+                            <li>Log Out</li>
+                        </a>
+                    </u>
+                </nav>
+                
+            </div>
+            <div class="display-field">
+                <form action="" method="POST">
+                    <div class="update-items">
+                    <div class="column-label"> 
+                    <label>Product Name</label><br>
+                    <input type="text" name="product-name" class="add-product" value="Enter New Product Here">
+                    </div>
+                    <div class="column-label">
+                    <label>Product Picture</label><br>
+                    <input type="file" name="product-pic" accept="image/*" class="add-product" value="Product Picture">
+                    </div>
+                    <div class="column-label">
+                    <label>Price In N</label><br>
+                    <input type="number" name="product-quantity" class="product-quant" value="Enter New Product Price">
+                    </div>
+                    <div>
+                        <input type="button" name="edit-product" class="edit-product" value="Edit">
+                    </div>
+                    <div>
+                        <input type="button" name="delete-product" class="delete-product" value="Delete">
+                    </div>
+                    </div> <!--End Update Items-->
+                    <input type="submit" value="Update" name="update-product">
+                    
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>Bandy Web Design, copyright &copy;2019</p>
+    </footer>
+</body>
+
+</html>
