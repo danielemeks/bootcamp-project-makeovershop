@@ -35,10 +35,10 @@ function checkUser() {
            // console.log(u_name.password);
             //console.log(u_name.firstname);
             //console.log(u_name.lasttname); 
-            newFname = u_name.firstname;
-            newLname = u_name.lasttname;
-            console.log(newFname);
-            console.log(newLnam);
+            //newFname = u_name.firstname;
+            //newLname = u_name.lasttname;
+            //console.log(newFname);
+            //console.log(newLnam);
             alert("I am here"); 
             //loginFname.textContent = [u_name.firstname];
             //loginLname.textConten = [u_name.lasttname];
