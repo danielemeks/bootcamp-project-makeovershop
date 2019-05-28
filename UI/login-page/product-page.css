@@ -70,7 +70,7 @@ header a:hover {
     text-align: center;
     font-size: 3em;
     color: #000000;
-    margin-top: 2em;
+   margin: 0;
 }
 nav #display_name p{
   padding: 0;
@@ -84,12 +84,17 @@ nav #display_name {
 }
 
 /*Boxes*/
+#display_product{
+  color: #e8419d;
+  font-size: 1.2rem;
+  text-align: center;
+}
 .list-product{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   padding-top: 50px;
-  
+  min-height: 16vh; 
 }
 .box{
   background-color: indianred;
@@ -128,13 +133,13 @@ nav #display_name {
 }
 
 
+
 /*footer*/
 footer {
   background-color: #e8491d;
   padding: 20px;
   color: #ffffff;
   text-align: center;
-  
 }
 
 /*media queries*/

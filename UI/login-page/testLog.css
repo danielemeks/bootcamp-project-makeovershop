@@ -31,6 +31,9 @@ ul {
   padding: 15px;
   color: #ffffff;
 }
+.myStyle{
+    display: none;
+}
 /*header*/
 header {
   background: #252529;
@@ -127,12 +130,6 @@ border-radius: 15px;
     font-size: 18px;
     color:#e8491d;
     width: 40%;
-}
-.loginHighlight{
-  border: solid 1px red;
-}
-#loginErrorMessage{
-color:  #e8419d;
 }
 
 

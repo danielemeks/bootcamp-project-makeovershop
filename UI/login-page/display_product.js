@@ -1,3 +1,5 @@
+
+
 /*Array of Objects holding Product details*/
 
 const products = [
@@ -22,13 +24,12 @@ const products = [
 
 ];
 
-
+/* Load products*/
 document.getElementById("loadPage").addEventListener("click", loadProducts);
 
 const list_product = document.querySelector(".list-product");
 
 function loadProducts() {
-
     products.forEach(function (new_product) {
         
         list_product.innerHTML += `<div class="box">
@@ -36,8 +37,6 @@ function loadProducts() {
              <h3>${new_product.product_name} ${new_product.Price}</h3>
              <p>${new_product.description}</p>
              </div>`;
-
     });
-
 }
 
