@@ -40,3 +40,20 @@ function loadProducts() {
     });
 }
 
+/** Display logged in fullname on page load*/
+window.onload = function () {
+    let f_name = localStorage.getItem("firstname");
+    let l_name = localStorage.getItem("lasttname");
+    let firstName = document.getElementById("fname");
+    let LastName = document.getElementById("lname");
+    firstName.innerText = f_name;
+    LastName.innerText = l_name;
+}
+
+/** Log out of product display page*/
+document.getElementById("logout_display").addEventListener("click", logOutDisplay);
+
+function logOutDisplay() {
+    window.location.href = "login-page.html"; 
+}
+
