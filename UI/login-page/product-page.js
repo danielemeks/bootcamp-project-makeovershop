@@ -26,10 +26,13 @@ function checkUser() {
     let user_password = document.getElementById("login-password").value;
     users.forEach(function(u_name){
 
-        if (u_name.username === user_name && u_name.password === user_password){
+        if (u_name.username === user_name && u_name.password === user_password) {
+            localStorage.setItem("firstname", u_name.firstname);
+            localStorage.setItem("lasttname", u_name.lasttname);
             window.location.href = "product-display.html";
- 
+            
         }
+        
         else {
             let loginError = document.getElementById("loginErrorMessage"); 
             let username_input = document.getElementById("login-username");
