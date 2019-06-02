@@ -70,7 +70,11 @@ header a:hover {
     text-align: center;
     font-size: 3em;
     color: #000000;
+<<<<<<< HEAD
     margin-top: 2em;
+=======
+   margin: 0;
+>>>>>>> 19719d3a91a9737614ca41f18e9dd30243789c7b
 }
 nav #display_name p{
   padding: 0;
@@ -84,12 +88,24 @@ nav #display_name {
 }
 
 /*Boxes*/
+<<<<<<< HEAD
+=======
+#display_product{
+  color: #e8419d;
+  font-size: 1.2rem;
+  text-align: center;
+}
+>>>>>>> 19719d3a91a9737614ca41f18e9dd30243789c7b
 .list-product{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   padding-top: 50px;
+<<<<<<< HEAD
   
+=======
+  min-height: 16vh; 
+>>>>>>> 19719d3a91a9737614ca41f18e9dd30243789c7b
 }
 .box{
   background-color: indianred;
@@ -128,13 +144,20 @@ nav #display_name {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 19719d3a91a9737614ca41f18e9dd30243789c7b
 /*footer*/
 footer {
   background-color: #e8491d;
   padding: 20px;
   color: #ffffff;
   text-align: center;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 19719d3a91a9737614ca41f18e9dd30243789c7b
 }
 
 /*media queries*/

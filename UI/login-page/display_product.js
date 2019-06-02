@@ -22,13 +22,11 @@ const products = [
 
 ];
 
-
 document.getElementById("loadPage").addEventListener("click", loadProducts);
 
 const list_product = document.querySelector(".list-product");
 
 function loadProducts() {
-
     products.forEach(function (new_product) {
         
         list_product.innerHTML += `<div class="box">

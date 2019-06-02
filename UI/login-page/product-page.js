@@ -17,7 +17,6 @@ const users = [
 ];
 
 
-
 document.getElementById("login-button").addEventListener("click", checkUser);
 
 function checkUser() {
