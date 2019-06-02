@@ -127,6 +127,9 @@ text-align: center;
     color:#e8491d;
     width: 40%;
 }
+.loginHighlight{
+  border: solid 1px red;
+}
 /*Store management*/
 #header-text h2{
 margin: 0;

@@ -21,7 +21,7 @@
         
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../landing-page/landing-page.html" target="#">Home</a></li>
                     <li ><a href="sign-up.html">Sign Up</a></li>
                     <li class="current"><a href="login.html">Login</a></li>
                     <li><a href="manage-store.html">Manage Store</a></li>
@@ -29,7 +29,7 @@
             </nav>
         </div>
     </header>
-    
+    <!--Login Form-->
     <section id="login">
         <p>Login With Your Username</p>
         <form class="login">
@@ -38,7 +38,8 @@
                 <input type="text" id="login-username" name="username" placeholder="Enter Your Username" /><br>
                 <label class="text-label" id="label-2">Enter Password:</label>
                 <input type="password" id="login-password" name="login-password" placeholder="Enter Your Password" /><br>
-                <input type="submit" value="Login" name="login-page" id="login-button"><br>
+                <span id="loginErrorMessage"></span><br>
+                <input type="reset" value="Login" name="login-page" id="login-button"><br>
                 <button class="forget-password">Forgot Password</button> 
             </div>
         </form>
@@ -49,6 +50,7 @@
         <p>Bandy Web Design, copyright &copy;2019</p>
     </footer>
     <script src="product-page.js"></script>
+    </script>
 </body>
 
 </html>   

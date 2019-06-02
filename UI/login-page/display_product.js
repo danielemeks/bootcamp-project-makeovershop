@@ -1,3 +1,5 @@
+
+
 /*Array of Objects holding Product details*/
 
 const products = [
@@ -22,6 +24,7 @@ const products = [
 
 ];
 
+/* Load products*/
 document.getElementById("loadPage").addEventListener("click", loadProducts);
 
 const list_product = document.querySelector(".list-product");
@@ -34,8 +37,23 @@ function loadProducts() {
              <h3>${new_product.product_name} ${new_product.Price}</h3>
              <p>${new_product.description}</p>
              </div>`;
-
     });
+}
 
+/** Display logged in fullname on page load*/
+window.onload = function () {
+    let f_name = localStorage.getItem("firstname");
+    let l_name = localStorage.getItem("lasttname");
+    let firstName = document.getElementById("fname");
+    let LastName = document.getElementById("lname");
+    firstName.innerText = f_name;
+    LastName.innerText = l_name;
+}
+
+/** Log out of product display page*/
+document.getElementById("logout_display").addEventListener("click", logOutDisplay);
+
+function logOutDisplay() {
+    window.location.href = "login-page.html"; 
 }
 

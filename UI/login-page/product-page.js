@@ -1,3 +1,4 @@
+
 /*Array of Objects holding Users details*/
 
 const users = [
@@ -16,41 +17,43 @@ const users = [
     
 ];
 
+/*Login Validation */
 
 document.getElementById("login-button").addEventListener("click", checkUser);
 
 function checkUser() {
     let user_name = document.getElementById("login-username").value;
     let user_password = document.getElementById("login-password").value;
-    let loginFname = document.getElementById("fname");
-    let loginLname = document.getElementById("lname");
-    let newFname = "";
-    let newLname = "";
-
     users.forEach(function(u_name){
 
         if (u_name.username === user_name && u_name.password === user_password) {
-            //console.log(u_name.username);
-           // console.log(u_name.password);
-            //console.log(u_name.firstname);
-            //console.log(u_name.lasttname); 
-            //newFname = u_name.firstname;
-            //newLname = u_name.lasttname;
-            //console.log(newFname);
-            //console.log(newLnam);
-            alert("I am here"); 
-            //loginFname.textContent = [u_name.firstname];
-            //loginLname.textConten = [u_name.lasttname];
-            window.open("product-display.html");
-            //loginFname.textContent = [u_name.firstname];
-            //loginLname.textConten = [u_name.lasttname];
-            //console.log(u_name.lasttname);
-            //alert("I am here");   
+            localStorage.setItem("firstname", u_name.firstname);
+            localStorage.setItem("lasttname", u_name.lasttname);
+            window.location.href = "product-display.html";
             
         }
+        
+        else {
+            let loginError = document.getElementById("loginErrorMessage"); 
+            let username_input = document.getElementById("login-username");
+            let password_input = document.getElementById("login-password");
+            loginError.innerText = "Incorrect Username or Password";
+            username_input.classList.add("loginHighlight");
+            password_input.classList.add("loginHighlight");
+        }
+        
     }); 
-     
+    
+    
 }
+
+
+
+
+
+
+
+
 
 
 
